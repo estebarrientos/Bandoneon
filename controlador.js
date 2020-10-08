@@ -172,6 +172,8 @@ function validarFormulario(evento){
         noUsuario.textContent = "Válido";
         noPass.classList.add("valid-feedback");
         noPass.textContent = "Válido";
+
+    
     }
 
 
