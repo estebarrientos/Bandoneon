@@ -74,7 +74,7 @@ function validarFormulario(evento){
         noPass.textContent = "Debes ingresar una contraseña";
 
 
-    }/*else if(nombre.value =="" && email.value == "" && usuario.value == "" && password.value != ""){
+    }else if(nombre.value =="" && email.value == "" && usuario.value == "" && password.value != ""){
         formulario.classList.add ("was-validated");
         noNombre.classList.add("invalid-feedback");
         noNombre.textContent = "Ingresa tu nombre";
@@ -162,9 +162,16 @@ function validarFormulario(evento){
 
 
 
-    }*/else{
-        alert("Gracias por Registrarte");
-
+    }else{
+        formulario.classList.add ("was-validated");
+        noNombre.classList.add ("valid-feedback");
+        noNombre.textContent = "Válido";
+        noEmail.classList.add("valid-feedback");
+        noEmail.textContent = "Válido";
+        noUsuario.classList.add("valid-feedback");
+        noUsuario.textContent = "Válido";
+        noPass.classList.add("valid-feedback");
+        noPass.textContent = "Válido";
     }
 
 
